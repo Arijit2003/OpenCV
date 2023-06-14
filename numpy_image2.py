@@ -8,9 +8,11 @@ image[2,:,:]=51
 print(image)
 print("\n")
 print(image.T)
-cv2.imwrite("image2.jpeg",image.T)
+#cv2.imwrite("image2.jpeg",image.T)
 
 
-img=cv2.imread("image2.jpeg")
-plt.imshow(img)
-plt.show()
+img=cv2.imread("image2.jpeg",cv2.IMREAD_UNCHANGED)
+#image_rgb=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+
+cv2.imshow("Image Viewer",img)
+cv2.waitKey()

@@ -19,11 +19,11 @@ print(arr2)
 print(np.delete(arr2,2))
 
 #ravel --flatening operation
-arrayx=np.array([(1,2,3,4),(5,6,7,8)])
+arrayx=np.array([[(1,2,3,4),(5,6,7,8)],[(1,2,3,4),(5,6,7,8)]])
 arrayY=np.array([1,25,56])
 arrayR=arrayx.ravel()
 print(arrayx)
-print("\n")
+print("\n\n\n\n\n\n")
 print(arrayR)
 #concatenate
 f_array=np.concatenate((arrayY,arrayR))

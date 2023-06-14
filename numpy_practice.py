@@ -45,7 +45,7 @@ print("\n\n")
 # random --randint
 randInt=np.random.randint(5,size=(5,3))
 print(randInt)
-print("\n\n")
+print("\n\n\nuhhu\n")
 #shape,size,dtype, astype
 shapeArr=np.array([(1.2,0.2,3),(4,5.99,6)])
 print(shapeArr.shape)
