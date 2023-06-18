@@ -3,18 +3,24 @@ import numpy as np
 
 image=cv2.imread("apple.jpg")
 
-blurredImage=cv2.medianBlur(image,51)
+mblurredImage=cv2.medianBlur(image,51)
+gBlurredImage=cv2.GaussianBlur(image,(5,5),51)
+
+
 
 cv2.imshow("Original",image)
 cv2.waitKey()
 
-cv2.imshow("Blurred Image",blurredImage)
+cv2.imshow("Median Blurred Image",mblurredImage)
 cv2.waitKey()
 
+cv2.bilateralFilter()
 
-kernal_sharpen=np.array([(0,-1,0),(-1,5,-1),(0,-1,0)])
-newImage=cv2.filter2D(blurredImage,-1,kernal_sharpen)
-
-cv2.imshow("Next Image ",newImage)
+cv2.imshow("Gaussian Blurred Image",gBlurredImage)
 cv2.waitKey()
+print(image.shape)
+print(mblurredImage.shape)
+print(gBlurredImage.shape)
+
+
 cv2.destroyAllWindows()
