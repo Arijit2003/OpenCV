@@ -12,7 +12,7 @@ ax.set_title("Original Image",fontsize=18)
 plt.imshow(image,cmap="gray")
 # s=c*r^y   here c=(1/255.0)
 newImage=image/255.0
-newImage=cv2.pow(newImage,0.4)
+newImage=cv2.pow(newImage,1.5)
 
 ax=fig.add_subplot(122)
 ax.set_title("Power Transformation",fontsize=18)
